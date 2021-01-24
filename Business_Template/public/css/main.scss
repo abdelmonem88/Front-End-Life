@@ -1,0 +1,15 @@
+.parent {
+color: red;
+font-size: 30px;
+background-color: green;
+letter-spacing: 2px;
+}
+
+.container {
+    .row {
+        .col-md-10 {
+            background-color: hotpink;
+            font-size: 40px;
+        }
+    }
+}
