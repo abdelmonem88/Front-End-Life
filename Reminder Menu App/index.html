@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <!-- container start -->
+            <div class="container">
+                <!-- form start -->
+                <form>
+                    <div class="edit-btn d-flex">
+                        <button>Edit</button>
+                    </div>
+                    <div class="input-control">
+                        <input type="text" placeholder="Search" class="border-radius">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </form> 
+                <!-- from end -->
+                <!-- tasks start -->
+                <div class="tasks d-flex">
+                    <!-- task start -->
+                    <div class="task mr-right border-radius">
+                        <div class="task-count d-flex space-between">
+                            <div class="icon blue">
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                            <div class="count">0</div>
+                        </div>
+                        <h3 class="task-title">Today</h3>
+                    </div>
+                    <!-- task end -->
+                    <!-- task start -->
+                    <div class="task border-radius">
+                        <div class="task-count d-flex space-between">
+                            <div class="icon orange">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="count">0</div>
+                        </div>
+                        <h3 class="task-title">Scheduled</h3>
+                    </div>
+                    <!-- task end -->
+                    <!-- task start -->
+                    <div class="task mr-right border-radius">
+                        <div class="task-count d-flex space-between">
+                            <div class="icon gray">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="count">0</div>
+                        </div>
+                        <h3 class="task-title">All</h3>
+                    </div>
+                    <!-- task end -->
+                    <!-- task start -->
+                    <div class="task border-radius">
+                        <div class="task-count d-flex space-between">
+                            <div class="icon red">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <div class="count">0</div>
+                        </div>
+                        <h3 class="task-title">Flagged</h3>
+                    </div>
+                    <!-- task end -->
+                </div>     
+                <!-- tasks end -->
+                <!-- lists container start -->
+                <div class="lists-container">
+                    <div class="lists-title">
+                        <span class="title">My Lists</span>
+                    </div>
+                    <div class="lists">
+                    <div class="list">
+                        <div class="list-icon">
+                                <i class="fas fa-tasks green"></i>
+                        </div>
+                        <div class="list-details border-bottom">
+                            <div class="list-title"><span>Do</span></div>
+                            <div class="list-count">
+                                <span class="count-number">0</span>
+                                <span class="list-count-icon">
+                                        <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="list-icon">
+                                <i class="fas fa-tasks yellow"></i>
+                        </div>
+                        <div class="list-details">
+                            <div class="list-title"><span>Family</span></div>
+                            <div class="list-count">
+                                <span class="count-number">0</span>
+                                <span class="list-count-icon">
+                                        <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- lists container end -->
+            </div>
+            <!-- container end -->
+        </main>
+    </body>
+</html>
