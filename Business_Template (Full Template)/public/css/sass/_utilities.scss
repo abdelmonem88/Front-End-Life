@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ outline: unset;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+body {
+ font-family: "Poppins", sans-serif;
+}
+
+ul {
+ list-style: none;
+}
+
+a {
+ text-decoration: none;
+}
+
+button {
+ border: 0;
+ cursor: pointer !important;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+}
+
+/* container class and its' media query */
+.container {
+ margin: auto;
+}
+
+@media (min-width: 320px) {
+ .container {
+  max-width: 300px;
+ }
+}
+
+@media (min-width: 576px) {
+ .container {
+  max-width: 540px;
+ }
+}
+
+@media (min-width: 768px) {
+ .container {
+  max-width: 720px;
+ }
+}
+
+@media (min-width: 992px) {
+ .container {
+  max-width: 960px;
+ }
+}
+
+@media (min-width: 1200px) {
+ .container {
+  max-width: 1140px;
+ }
+}
+
+//margin and padding calsses
+$spaceAmount: (1, 2, 3, 4, 5);
+
+@each $space in $spaceAmount {
+ .m-#{$space} {
+  margin: #{$space}rem;
+ }
+
+ .p-#{$space} {
+  padding: #{$space}rem;
+ }
+
+ .my-#{$space} {
+  margin: #{$space}rem 0;
+ }
+ .mx-#{$space} {
+  margin: 0 #{$space}rem;
+ }
+
+ .py-#{$space} {
+  padding: #{$space}rem 0;
+ }
+
+ .px-#{$space} {
+  padding: 0 #{$space}rem;
+ }
+
+ .mb-#{$space} {
+  margin-bottom: #{$space}rem;
+ }
+}

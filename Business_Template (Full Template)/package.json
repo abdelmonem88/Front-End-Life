@@ -9,6 +9,7 @@
   "author": "Men3m",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
@@ -22,6 +23,7 @@
   "dependencies": {
     "g": "^2.0.1",
     "gulp-cli": "^2.3.0",
+    "gulp-font-awesome-icons": "^1.1.0",
     "static-server": "^2.2.1"
   }
 }
