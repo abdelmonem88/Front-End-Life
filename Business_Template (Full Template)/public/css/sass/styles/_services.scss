@@ -1,0 +1,43 @@
+.services {
+ .cards-wrapper {
+  @include flex-between;
+
+  .card {
+   width: 31%;
+
+   .card-text {
+    background-color: $section_alt;
+    @extend .p-2;
+
+    h3 {
+     @extend .mb-2;
+    }
+
+    p {
+     font-size: 14px;
+     font-weight: $font_weight_300;
+     @extend .my-2;
+    }
+
+    a {
+     @include btn;
+    }
+   }
+  }
+ }
+}
+
+@media (max-width: $medium_screen_media) {
+ .cards-wrapper {
+  flex-direction: column;
+
+  .card {
+   width: 100% !important;
+   margin-bottom: 2rem;
+
+   img {
+    width: 100%;
+   }
+  }
+ }
+}

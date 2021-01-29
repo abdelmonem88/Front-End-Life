@@ -32,12 +32,14 @@ gulp.task("css", function () {
 
 //JS task
 gulp.task("js", function () {
- return gulp
-  .src("public/js/*.js")
-  .pipe(concat("main.js"))
-  .pipe(minify())
-  .pipe(gulp.dest("dist/assets/js"))
-  .pipe(livereload({ start: true }));
+ return (
+  gulp
+   .src("public/js/*.js")
+   .pipe(concat("main.js"))
+   // .pipe(minify())
+   .pipe(gulp.dest("dist/assets/js"))
+   .pipe(livereload({ start: true }))
+ );
 });
 
 //Watch Tasks

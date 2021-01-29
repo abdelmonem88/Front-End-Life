@@ -3,17 +3,11 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
-        //fonts
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        link(rel="stylesheet", href="assets/css/all.css")
-        //libs
-        link(rel="stylesheet", href="assets/css/slick.css")
-        //styles
-        link(rel="stylesheet", href="assets/css/main.css")
+        include pug/styles
         title Business Template
 
     body
+        //Start home section
         section#home.home
             .header
                 .header-top
@@ -47,15 +41,16 @@ html(lang="en")
                                 h1  Finance Business
                                 .nav-toggle
                                     <i class="fas fa-bars"></i>
-                            ul.nav-list
-                                li.nav-item
-                                    a.nav-link.active(href="#") home
-                                li.nav-item
-                                    a.nav-link(href="#") about us
-                                li.nav-item
-                                    a.nav-link(href="#") our service
-                                li.nav-item
-                                    a.nav-link(href="#") contact us
+                            .list-container
+                                ul.nav-list
+                                    li.nav-item
+                                        a.nav-link.active(href="#") home
+                                    li.nav-item
+                                        a.nav-link(href="#") about us
+                                    li.nav-item
+                                        a.nav-link(href="#") our service
+                                    li.nav-item
+                                        a.nav-link(href="#") contact us
 
             .banner
                 .slider
@@ -65,7 +60,7 @@ html(lang="en")
                             h2 Financial Analysis<br>& Consulting
                             p This finance HTML template is 100% free of charge provided by TemplateMo for everyone. You can download, edit and use this layout for your business website.
 
-                            a.btn(href="#") contact us
+                            a(href="#") contact us
 
                     .item.item-2
                         .text-content
@@ -73,7 +68,7 @@ html(lang="en")
                             h2 Accounting<br>& Management
                             p You are allowed to use this template for your company websites. You are NOT allowed to re-distribute this template ZIP file on any template download website. Please contact TemplateMo for more detail.
 
-                            a.btn(href="#") our services
+                            a(href="#") our services
                             
                     .item.item-3
                         .text-content
@@ -81,7 +76,7 @@ html(lang="en")
                             h2 Market Analysis<br>& Statistics
                             p Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate mi. Sed nec cursus augue. Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.
 
-                            a.btn(href="#") learn more
+                            a(href="#") learn more
 
             div.slider-btn.prev-btn
                 span
@@ -89,9 +84,81 @@ html(lang="en")
             div.slider-btn.next-btn
                 span
                     <i class="fas fa-chevron-right"></i>
+        //End Home Section
 
-        script(src="assets/js/jquery.min.js")
-        script(src="assets/js/slick.min.js")
-        script(src="assets/js/main.js")
-        script(src="http://localhost:35729/livereload.js")
+        //Request Call Start
+        section.request-call
+            .container
+                .content
+                    .text-content
+                        h3 Request a call back right now ?
+                        p Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.
+                    a(href="#") contact us
+        //Request Call End
+
+        //Start Services Section
+        section#services.services.section-pd
+            .container
+                .section-title
+                    h2 Finacial 
+                        span Services
+                    p ALIQUAM ID URNA IMPERDIET LIBERO MOLLIS HENDRERIT
+                .cards-wrapper
+                    .card
+                        img(src="assets/images/service_01.jpg", alt="")
+                        .card-text
+                            h3 Digital Currency
+                            p Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.
+                            a(href="#") read more
+                    .card
+                        img(src="assets/images/service_02.jpg", alt="")
+                        .card-text
+                            h3 Market Analysis
+                            p Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.
+                            a(href="#") read more
+                    .card
+                        img(src="assets/images/service_03.jpg", alt="")
+                        .card-text
+                            h3 Historical Data
+                            p Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.
+                            a(href="#") read more
+        //End Services Section
+
+        //Start Statistics Section
+        section#statistics.statistics.section-pd
+            .container
+                .content
+                    .text-content
+                        h4 LOREM IPSUM DOLOR SIT AMET
+                        h2 Our solutions for your
+                            <br>
+                            span business growth
+                        p Pellentesque ultrices at turpis in vestibulum. Aenean pretium elit nec congue elementum. Nulla luctus laoreet porta. Maecenas at nisi tempus, porta metus vitae, faucibus augue.
+
+                        p Fusce et venenatis ex. Quisque varius, velit quis dictum sagittis, odio velit molestie nunc, ut posuere ante tortor ut neque.
+
+                        a(href="#") read more
+                    
+                    .counters
+                        .counter
+                            span.count(data-from="0",data-to="945")
+                            span.description work hours
+
+                        .counter
+                            span.count(data-from="0",data-to="1280")
+                            span.description Great Reviews
+
+                        .counter
+                            span.count(data-from="0",data-to="578")
+                            span.description Projects Done
+
+                        .counter
+                            span.count(data-from="0",data-to="26")
+                            span.description Awards Won
+
+        //End Statistics Section
+
+        |
+        |
+        include pug/scripts
 

@@ -1,0 +1,41 @@
+.request-call {
+ background-color: $mainColor;
+ @extend .py-2;
+ .content {
+  @include flex-between;
+  align-items: center;
+
+  .text-content {
+   color: $lightColor;
+   h3 {
+    font-weight: $font_weight_600;
+    margin-bottom: 0.5rem;
+   }
+
+   p {
+    font-size: 13px;
+   }
+  }
+
+  a {
+   @include btn-alt;
+   transition: $transition_all;
+
+   &:hover {
+    background-color: $lightColor;
+    color: $mainColor;
+   }
+  }
+ }
+}
+
+@media (max-width: $medium_screen_media) {
+ .content {
+  flex-direction: column;
+
+  .text-content {
+   text-align: center !important;
+   margin-bottom: 2rem;
+  }
+ }
+}
