@@ -1,0 +1,66 @@
+.info {
+ &-content {
+  @include flex-between;
+
+  .img-wrapper,
+  .right-content {
+   width: 50%;
+  }
+
+  .img-wrapper {
+   img {
+    vertical-align: middle;
+   }
+  }
+
+  .right-content {
+   background-color: $section_alt;
+   padding: 2.5rem;
+
+   h4 {
+    text-transform: uppercase;
+    font-weight: $font_weight_300;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+   }
+
+   h2 {
+    font-size: $fontSize2;
+    font-weight: $font_weight_600;
+    @extend .mb-2;
+
+    span {
+     color: $mainColor;
+    }
+   }
+
+   p {
+    @include p-style;
+    @extend .mb-2;
+   }
+
+   p:nth-of-type(2) {
+    @extend .mb-3;
+   }
+
+   a {
+    @include btn;
+   }
+  }
+ }
+}
+
+@media (max-width: $medium_screen_media) {
+ .info-content {
+  flex-direction: column;
+
+  .right-content,
+  .img-wrapper {
+   width: 100%;
+  }
+
+  .right-content {
+   padding: 2rem;
+  }
+ }
+}

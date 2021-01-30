@@ -1,0 +1,37 @@
+.testimonial {
+ background-color: $section_alt;
+
+ .slider {
+  .item {
+   position: relative !important;
+   background-color: $lightColor;
+   text-align: center;
+   padding: 2rem 1.5rem;
+
+   h3 {
+    margin-bottom: 0.25rem;
+    text-transform: capitalize;
+   }
+
+   span {
+    color: $mainColor;
+    line-height: $line_height;
+   }
+
+   p {
+    font-size: 14px;
+    line-height: 30px;
+   }
+  }
+
+  &-item-img {
+   padding: 1.5rem 0;
+   img {
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+   }
+  }
+ }
+}

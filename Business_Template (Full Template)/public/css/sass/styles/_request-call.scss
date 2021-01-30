@@ -13,7 +13,7 @@
    }
 
    p {
-    font-size: 13px;
+    @include p-style;
    }
   }
 

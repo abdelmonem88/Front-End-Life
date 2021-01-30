@@ -70,7 +70,7 @@ nav {
     color: $lightColor;
     text-transform: uppercase;
     font-size: $fontSize1;
-    @extend .p-2;
+    padding: 2rem 2rem 2rem 0rem;
    }
 
    .nav-toggle {
@@ -88,11 +88,12 @@ nav {
   @include flex-between;
 
   .nav-item {
+   margin-right: 1rem;
    text-transform: capitalize;
 
    .nav-link {
     color: $lightColor;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     @extend .mx-1;
     font-weight: $font_weight_300;
     transition: $trasition_color;
@@ -148,6 +149,7 @@ nav.fixed {
   }
 
   .text-content {
+   color: $lightColor;
    width: 70%;
    position: absolute;
    top: 55%;
@@ -162,16 +164,15 @@ nav.fixed {
    }
 
    h2 {
-    color: $lightColor;
     font-size: $fontSize3;
     @include upper-spacing;
     line-height: 1.1;
    }
 
    p {
-    color: $lightColor;
-    @extend .my-2;
     max-width: 550px;
+    @include p-style;
+    @extend .my-2;
     @extend .mb-3;
    }
 
@@ -273,5 +274,21 @@ nav.fixed {
 
  .text-content {
   max-width: 70vw !important;
+ }
+}
+
+@media (max-width: $small_screen_media) {
+ .home {
+  h4 {
+   font-size: 20px !important;
+  }
+
+  h2 {
+   font-size: 30px !important;
+  }
+
+  p {
+   font-size: 15px;
+  }
  }
 }

@@ -13,7 +13,6 @@ html {
 
 body {
  font-family: "Poppins", sans-serif;
- height: 5000px;
 }
 
 ul {
@@ -34,9 +33,24 @@ img {
  height: auto;
 }
 
+input,
+textarea {
+ border: 0;
+ border-radius: 20px;
+ padding: 0.5rem 1rem;
+ font-family: "Poppins", sans-serif;
+}
+input::placeholder,
+textarea::placeholder {
+ font-family: "Poppins", sans-serif;
+ text-transform: capitalize;
+ color: rgb(150, 150, 150);
+}
+
 /* container class and its' media query */
 .container {
  margin: auto;
+ width: 80%;
 }
 
 @media (min-width: 320px) {

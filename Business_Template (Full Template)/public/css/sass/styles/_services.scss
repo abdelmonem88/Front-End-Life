@@ -1,20 +1,23 @@
 .services {
  .cards-wrapper {
   @include flex-between;
+  align-items: center;
 
   .card {
-   width: 31%;
+   width: 32%;
+   display: flex;
+   flex-direction: column;
 
    .card-text {
-    background-color: $section_alt;
     @extend .p-2;
+    background-color: $section_alt;
 
     h3 {
      @extend .mb-2;
     }
 
     p {
-     font-size: 14px;
+     @include p-style;
      font-weight: $font_weight_300;
      @extend .my-2;
     }

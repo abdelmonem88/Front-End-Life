@@ -1,0 +1,20 @@
+.clients {
+ background-color: $section_alt;
+
+ .carousel {
+  width: 95%;
+  margin: 0 auto;
+  .clients-carousel {
+   padding: 3.5rem 0;
+
+   .client-image {
+    width: 200px;
+    img {
+     width: 140px !important;
+     display: block;
+     margin: 0 auto;
+    }
+   }
+  }
+ }
+}
