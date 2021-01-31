@@ -152,6 +152,9 @@ window.addEventListener("scroll", () => {
 
 //libs
 $(document).ready(function () {
+ //prelouder
+ $(".prelouder").delay(2500).fadeOut(700);
+
  //banner slider
  $(".slider").slick({
   infinite: true,
