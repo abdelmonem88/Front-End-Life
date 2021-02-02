@@ -6,6 +6,7 @@
   align-items: center;
 
   .text-content {
+   max-width: 100% !important;
    color: $lightColor;
    h3 {
     font-weight: $font_weight_600;
